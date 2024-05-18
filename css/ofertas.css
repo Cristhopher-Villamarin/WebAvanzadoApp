@@ -1,5 +1,5 @@
 body{
-    background-color: #666565;
+    background-color: #f8f9fa;
 }
   .footer {
     background-color: #666565;
@@ -28,4 +28,12 @@ body{
 .carousel-item img {
     object-fit: cover;
     height: 100%;
+}
+
+.carrusel-margin {
+  margin-top: 150px; /* Ajusta este valor según sea necesario */
+}
+
+.description-section {
+  margin-top: -30px;
 }
