@@ -1,0 +1,31 @@
+body{
+    background-color: #666565;
+}
+  .footer {
+    background-color: #666565;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer col-lg-12{
+    margin-top: 50px;
+  }
+  .footer-icon {
+    margin-right: 10px;
+  } 
+  .carrusel {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    height: auto;
+    max-height: 500px; /* Ajusta este valor según tus necesidades */
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
