@@ -1,0 +1,50 @@
+body {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.titulo {
+    margin-top: 85px;
+    padding: 10px;
+    background-color: #9f9ba8;
+    color: white;
+}
+
+.cuerpoCatalogo {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cuerpoCatalogo1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productosCatalogo,
+.productosCatalogo1 {
+    flex: 0 0 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.productosCatalogo a,
+.productosCatalogo1 a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+.productosCatalogo img,
+.productosCatalogo1 img {
+    width: 100%;
+    height: auto;
+}
+
+.productosCatalogo:hover img,
+.productosCatalogo1:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}

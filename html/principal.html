@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/encabezados.css">
+    <style>
+        body {       
+            height: 100%;
+            margin: 0;       
+            border: 0;   
+            background-color: #353437;  
+        }
+        .parteEntera {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+.parteIzquierda {
+    background-color: #e2c99f;
+    color: #353437;
+    text-align: center;
+    flex: 1 1 70%;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px;
+}
+
+.parteDerecha {
+    flex: 1 1 30%;
+    display: flex;
+    background-color: #a9c9ba;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.parteIzquierda h1 {
+    font-size: 38px;
+    text-shadow: 0 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.parteDerecha img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.parteDerecha img:hover {
+    transform: scale(1.12);
+    filter: invert(100%);
+}
+
+        .productos {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(to right, #53576b, #e2c99f);
+            font-family: 'Raleway', sans-serif;
+            padding: 45px;
+        }
+
+        .producto-container {
+            display: inline-block;
+            margin: 20px;
+            transform-style: preserve-3d;
+            transition: transform 0.3s ease;
+        }
+
+        .producto-container:hover {
+            transform: rotateY(20deg);
+        }
+
+        .productos img {
+            height: 200px;
+            width: 100%;
+            display: block;
+            margin-bottom: 10px;
+            border-radius: 40px;
+            box-shadow: 0 10px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .productos h3 {
+            display: block;
+            margin: 0;
+        }
+
+        .bar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+            color: white;
+        }
+
+        .bar section {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            padding: 10px;
+            background-color: #444;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            width: 100%;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .bar section img {
+            margin-bottom: 5px;
+        }
+
+        @media(min-width: 768px) {
+            .bar section {
+                width: calc(25% - 10px);
+            }
+
+            .bar section:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+            <section class="logo">
+                <a href="#">
+                    <img src="../img/logoblanco.png" alt="LOGO INMOBILIARIA" style=" height: 100px;">
+                </a>
+            </section>
+            <nav class="elementosNav">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="principal.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contáctanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ofertas.html">Sobre nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </nav>
+    </header>
+
+    <article class="parteEntera container-fluid">
+        <section class="parteIzquierda col-md-8">
+            <img src="../img/esloganblanco.png" alt="" width="100%" height="auto"
+                onmouseover="this.style.filter='invert(100%)'"
+                onmouseout="this.style.filter='none'">
+            <img src="../img/sofanegro.png" alt="" width="100%" height="auto">
+        </section>
+        <section class="parteDerecha col-md-4">
+            <aside>
+                <img src="../img/descuento.png" alt="" width="auto" height="auto">
+            </aside>
+        </section>
+    </article>
+
+    <section>
+        <br>
+    </section>
+    <section class="productos">
+        <h2 style="font-family: 'Oswald', sans-serif;">ENCUENTRA LOS MEJORES PRODUCTOS PARA:</h2>
+
+        <section class="producto-container">
+            <img src="../img/salas.png" alt="">
+            <h3>Salas</h3>
+        </section>
+
+        <section class="producto-container">
+            <img src="../img/comedor.png" alt="">
+            <h3>Comedores</h3>
+        </section>
+
+        <section class="producto-container">
+            <img src="../img/dormitorio.png" alt="">
+            <h3>Dormitorios</h3>
+        </section>
+
+        <section class="producto-container">
+            <img src="../img/relax.png" alt="">
+            <h3>Linea Relax</h3>
+        </section>
+
+        <section class="producto-container">
+            <img src="../img/decoracion.png" alt="">
+            <h3>Decoracion</h3>
+        </section>
+    </section>
+
+    <section class="bar container-fluid">
+        <section class="col-md-2.5">
+            <img src="../img/box.png" alt="Tiempo Entrega" width="auto" height="40px" style="filter: invert(100%);">
+            <p>Plazo de entrega: varía según el tipo de producto</p>
+        </section>
+        <section class="col-md-2.5">
+            <img src="../img/metodoPago.png" alt="Métodos de Pago" width="auto" height="40px" style="filter: invert(100%);">
+            <p>Métodos: varía según el tamaño de la transacción</p>
+        </section>
+        <section class="col-md-2.5">
+            <img src="../img/whatsapp2.png" alt="Entrega WhatsApp" width="auto" height="40px" style="filter: invert(100%);">
+            <p>Compra por WhatsApp: +096 296 2925 Envíe un mensaje</p>
+        </section>
+        <section class="col-md-2.5">
+            <img src="../img/telefono3.png" alt="LLamadas" width="auto" height="40px" style="filter: invert(100%);">
+            <p>Llamadas al número: 1800 123456 Comuníquese con Nosotros</p>
+        </section>
+    </section>
+
+    <footer class="piePagina text-center p-3 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../img/logoblanco.png" alt="LOGO INMOBILIARIA" style="width: 200px; height:200 px;">
+                </div>
+                <div class="col-md-4">
+                    <p>&copy; 2023 MARROS. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-4">
+                    <section class="serviciocliente">
+                        <img src="../img/serviciocliente.png" alt="LOGO INMOBILIARIA" width="auto" height="65px">
+                        <p>Servicio al Cliente</p>
+                        <p>Lunes a Domingo: 0980527820</p>
+                    </section>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <p> Redes Sociales:</p>
+                    <img src="../img/facebook.png" alt="LOGO INMOBILIARIA" width="35px" height="35px">
+                    <img src="../img/instagram.png" alt="LOGO INMOBILIARIA" width="35px" height="35px">
+                    <img src="../img/whatsapp2.png" alt="LOGO INMOBILIARIA" width="35px" height="35px" style="filter: invert(100%);">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>

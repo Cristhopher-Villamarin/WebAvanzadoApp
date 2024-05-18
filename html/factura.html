@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <title>Formulario - Dirección de Envío</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Raleway', sans-serif;
+            background: linear-gradient(to right, #e2c99f ,#53576b );
+        }
+        #nuevoTotal{
+            font-size: 30px; /* Tamaño de fuente */
+            font-weight: bold; /* Negrita */
+            text-align: center; /* Alineación centrada */
+           margin-top: -10px;
+           text-shadow:7px 13px 37px #000 ;
+           color: #f4f4f4;
+        }
+
+        #producto {
+            font-size: 30px; /* Tamaño de fuente */
+            font-weight:900; /* Negrita */
+            text-align: center; /* Alineación centrada */
+           margin-top: -390px;
+           text-shadow:3s7px 43px 67px #000000 ;
+           text-decoration-line: underline;
+        }
+
+        .id{
+            font-family: 'Raleway', sans-serif;
+        }
+        form {
+            margin-top: 80px;
+            width: 400px;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 4px;
+            font-family: 'calibri';
+            color: black;
+            box-shadow: 7px 13px 37px #000;
+            border-radius: 10px;
+            font-family: 'Raleway', sans-serif;
+            margin-right: 10px; /* Ajuste del margen derecho */
+            
+        }
+
+        .id{
+            font-family: 'Raleway', sans-serif;
+        }
+        form h4 {
+            text-align: center;
+            margin: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            background: #a39b7e;
+            border: none;
+            padding: 12px;
+            color: white;
+            margin: auto;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .error-message {
+            color: #ff0000;
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+
+     
+
+    </style>
+</head>
+<body>
+    <section class="imagenContacto">
+        
+        <img src="../img/logoblanco.png" alt="">
+          <div id="producto"></div>
+          <br>
+        <div id="nuevoTotal"></div>
+      
+        
+    </section>
+    <form id="shipping-form" onsubmit="return validateForm()">
+        <h4>DETALLE DE ENVIO</h4>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre" required>
+    
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido" required>
+    
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="Ingrese su Correo Electrónico" required>
+    
+        <label for="cedula">Cédula de Identidad:</label>
+        <input type="text" id="cedula" name="cedula" placeholder="Ingrese su Número de Cedula" required>
+    
+        <label for="ciudad">Ciudad:</label>
+        <select id="ciudad" name="ciudad" required>
+            <option value="">Seleccionar Ciudad</option>
+            <option value="Quito">Quito</option>
+            <option value="Ambato">Ambato</option>
+            <option value="Guayaquil">Guayaquil</option>
+            <option value="Cuenca">Cuenca</option>
+        </select>
+    
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" placeholder="Ingrese su Número de teléfono" required>
+    
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" placeholder="Ingrese su Dirección" required>
+    
+        <section class="error-message" id="error-message"></div>
+    
+        <button type="submit">Enviar</button>
+    </form>
+    
+    
+    <script>
+        var nuevoTotal = sessionStorage.getItem("nuevoTotal");
+        var producto = sessionStorage.getItem("producto");
+        
+        document.getElementById("producto").innerText = producto;
+        document.getElementById("nuevoTotal").innerText = "Total: $" + nuevoTotal;
+    
+        function validateForm() {
+            var nombreInput = document.getElementById('nombre');
+            var apellidoInput = document.getElementById('apellido');
+            var correoInput = document.getElementById('correo');
+            var cedulaInput = document.getElementById('cedula');
+            var ciudadInput = document.getElementById('ciudad');
+            var telefonoInput = document.getElementById('telefono');
+            var direccionInput = document.getElementById('direccion');
+            var errorMessage = document.getElementById('error-message');
+    
+            // Limpiar mensajes de error previos
+            errorMessage.textContent = '';
+    
+            // Validaciones
+            if (!nombreInput.value.match(/^[a-zA-Z]+$/) || !apellidoInput.value.match(/^[a-zA-Z]+$/)) {
+                errorMessage.textContent = 'Nombre y Apellido deben contener solo letras';
+                clearFields(nombreInput, apellidoInput);
+                return false;
+            }
+    
+            if (!correoInput.value || !cedulaInput.value || !ciudadInput.value || !telefonoInput.value.match(/^\d+$/) || !direccionInput.value) {
+                errorMessage.textContent = 'Todos los campos son obligatorios y/o tienen formato incorrecto';
+                
+                return false;
+            }
+            alert('Su Compra se ha realizado con éxito');
+            window.location.href = "principal.html"; // Asegúrate de que la dirección sea correcta
+            return false;
+        }
+    </script>
+    
+
+</body>
+</html>

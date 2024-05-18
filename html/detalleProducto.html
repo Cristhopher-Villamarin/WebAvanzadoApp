@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="../css/encabezados.css">
+    <link rel="stylesheet"  href="../css/detalleProducto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <a href="#">
+                <img src="../img/logoblanco.png" alt="LOGO INMOBILIARIA" style="width: 200px; height: auto;">
+            </a>
+        </section>           
+        <nav class="elementosNav">
+            <a href="principal.html">Inicio</a>
+            <!-- Menú desplegable de Productos -->
+            <section class="menuDesplegable">
+                <a href="catalogo.html">Productos</a>
+                <section class="contenedorMenu">
+                    <a href="sala.html">Sala</a>
+                    <a href="comedor.html">Comedor</a>
+                    <a href="cocina.html">Cocina</a>
+                    <a href="jardin.html">Jardín</a>
+                    <a href="habitacion.html">Habitación</a>
+                    <a href="colchon.html">Colchones</a>
+                </section>
+            </section>
+            <!-- Fin del menú desplegable -->
+            <a href="contacto.html">Contáctanos</a>
+            <a href="ofertas.html">Ofertas</a>
+        </nav>
+    </header>
+
+    <section class="producto">
+        <section class="contenedorImagen">
+            
+            <!-- Imagen principal -->
+            <div class="product-image">
+                <img id="main-image" src="../img/sofablanco1.jpg" alt="Producto" >
+            </div>
+            <div class="thumbnails">
+                <img src="../img/sofablanco1.jpg" alt="Thumbnail 1" onclick="changeImage(this)">
+                <img src="../img/sofablanco2.jpg" alt="Thumbnail 2" onclick="changeImage(this)">
+                <img src="../img/sofablanco3.jpg" alt="Thumbnail 3" onclick="changeImage(this)">
+            </div>
+        </section>
+    <div class="container">
+        <div class="product-details">
+            <div class="item">
+                <h2>Producto</h2>
+            </div>
+            <div class="item">
+                <p style="font-size: 24px; color: black; font-weight: bold;">Sala Modular Sofa Cama Charlie</p>
+            </div>
+            <div class="item">
+                <h2>Descripcion</h2>
+            </div>
+            <div class="item">
+                <p>La Sala Modular Sofá Cama Charlie será el centro de atención de tu hogar gracias a su funcionalidad y versatilidad, ya que puede convertirse en una cama para 2 personas de una manera fácil y rápida. ¡Sin duda sobrepasará tus expectativas y las de tus invitados!</p>
+            </div>
+            <div class="item">
+                <h2>Precio</h2>
+            </div>
+            <div class="item">
+                <p style="font-size: 24px; color: white; font-weight: bold;">$99.99</p>
+
+            </div>
+            <div class="item">
+                <h2>Cantidad</h2>
+            </div>
+            <div class="item">
+                <div class="quantity-buttons">
+                    <button onclick="decreaseQuantity()">-</button>
+                    <span id="quantity">1</span>
+                    <button onclick="increaseQuantity()">+</button>
+                </div>
+            </div>
+
+            
+            <div class="item">
+                <h2>Entrega</h2>
+            </div>
+            <div class="item">
+                <p style="color: rgb(39, 38, 38); font-weight: bold;">Envio a domicilio o retiro en tienda</p>
+
+            </div>
+        </div>
+    </section>
+    <section class="carrito">
+        <button class="add-to-cart" onclick="calcularTotal()">PAGAR</button>  
+    </section>
+    
+
+    <article class="parteEntera">
+        <section class="parteIzquierda">
+            <section class="submenu1">
+    <ul class="menu">
+        <li class="menu-item" onclick="mostrarInfo('descripcion')">
+            Descripción
+        </li>
+        <li class="menu-item" onclick="mostrarInfo('valoraciones')">
+            Valoraciones
+        </li>
+        <li class="menu-item" onclick="mostrarInfo('garantias')">
+            Garantías
+        </li>
+    </ul>
+
+    <section id="descripcion" style="display:none;">
+        <!-- Aquí va la información de la descripción del producto -->
+        <p>Moderna y amplia sala modular compuesta por 7 piezas, seguro disfrutarás de largas y cómodas horas de descanso y relax. La versatilidad de esta sala te permite acomodar las piezas según tu espacio y posición que desees. <br><br>
+
+            Esta sala modular es ideal para cualquier ambiente gracias a su diseño moderno. Sus detalles como sus amplios y cómodos asientos, apoya brazo ajustable y un pequeño espacio para guardar tus accesorios hacen de esta sala sea exclusiva. <br><br>
+
+            Estilo: Contemporáneo <br><br>
+
+            Dimensiones: <br>
+            Sillón Esquinero (1): 109 cm largo x 109 cm profundidad x 93 cm altura. <br>
+            Sillón con brazo (1): 118 cm largo x 109 cm profundidad x 93 cm altura. <br>
+            Sillón sin brazo (3): 94 cm largo x 109 cm profunidad x 93 cm altura. <br>
+            Baúl (compartimento, 1): 109 cm largo x 41 cm profundidad x 36 cm altura. <br>
+            Ottoman (1): 86 cm largo x 86 cm profundidad x 53 cm altura. <br><br>
+
+            Materiales: <br>
+            Tapiz: microfibra <br>
+            Patas: madera color negro <br><br>
+
+            Etiquetas: Juego de sala, Juego de sala moderno, Sofá de madera, Sofá para sala, Sofá moderno <br><br>
+
+            *Colores de los productos pueden variar de los reales por efectos de la luz, brillo del tapiz o calidad de la pantalla donde se visualiza. <br><br>
+
+            *No incluye cojines.
+        </p>
+    </section>
+
+    <section id="valoraciones" style="display:none;">
+        <!-- Aquí va la información de las valoraciones -->
+        
+            <section class="reseña">
+                <p><strong>Usuario1</strong></p>
+                <p><strong>Valoración:</strong> ⭐⭐⭐⭐⭐</p>
+                <p><strong>Reseña:</strong> ¡Este sofá es increíble! Lo compré para mi sala y no puedo estar más contenta. Es súper cómodo y la función de cama es genial para cuando vienen visitas. Sin duda, lo recomendaría a cualquiera que esté buscando comodidad y funcionalidad en un mueble.</p>
+            </section>
+            <section class="reseña">
+                <p><strong>Usuario2</strong></p>
+                <p><strong>Valoración:</strong> ⭐⭐⭐</p>
+                <p><strong>Reseña:</strong> El diseño es bonito y la funcionalidad como cama es muy práctica. Sin embargo, siento que la calidad del material podría ser un poco mejor. Después de un par de meses de uso, noté algunos desgastes en el tapizado. En general, está bien por el precio, pero esperaba un poco más en cuanto a durabilidad.</p>
+            </section>
+            <section class="reseña">
+                <p><strong>Usuario3</strong></p>
+                <p><strong>Valoración:</strong> ⭐⭐⭐⭐</p>
+                <p><strong>Reseña:</strong> Estoy bastante satisfecho con mi compra. El sofá es cómodo y se ve muy bien en mi sala. La entrega fue rápida y el montaje fue sencillo. Lo único que cambiaría es que me hubiera gustado tener más opciones de colores para elegir. ¡Pero en general, una buena compra!</p>
+            </section>
+            <section class="reseña">
+                <p><strong>Usuario4</strong></p>
+                <p><strong>Valoración:</strong> ⭐⭐⭐</p>
+                <p><strong>Reseña:</strong> Compré este sofá hace unos meses y, en general, estoy contenta con él. Es cómodo y funcional, como se describe. Sin embargo, me hubiera gustado que las instrucciones de montaje fueran un poco más claras. Tuve algunas dificultades al principio para ensamblarlo correctamente.</p>
+            </section>
+       
+        
+    </section>
+    <section id="garantias" style="display:none;">
+        <!-- Aquí va la garantía del producto -->
+        <h3>Garantía del Producto</h3>
+        <p>Nuestro compromiso es brindarte productos de alta calidad. Por eso, este sofá modular viene con una garantía de satisfacción del 100%. Si no estás completamente satisfecho con tu compra, contáctanos dentro de los primeros 30 días y te ofreceremos un reembolso completo o un reemplazo del producto, según tu preferencia.</p>
+    </section>
+</section>
+
+            
+        </section>
+        <section class="parteDerecha">
+            <aside>
+                <h2 style="font-family: 'Raleway', sans-serif;">METODOS DE PAGO:</h2>
+                 <img src="../img/metodospago.jpg" alt="LOGO INMOBILIARIA" style="width: 500px; height:auto;" >           
+            </aside>
+        </section>
+    </article>
+
+ 
+  
+
+
+   
+
+
+    <footer class="piePagina">
+        <img src="../img/logoblanco.png" alt="LOGO INMOBILIARIA" style="width: 200px; height:200 px;" >
+        <p>&copy; 2023 MARROS. Todos los derechos reservados.</p>
+        <section class="serviciocliente">
+            <img src="../img/serviciocliente.png" alt="LOGO INMOBILIARIA" width="auto" height="65px">
+            <p>Servicio al Cliente</p>
+            <p>Lunes a Domingo: 0980527820</p>
+        </section>
+        <table>
+            <tr>
+                <td>
+                    <p> Redes Sociales:</p>
+                    <br>
+                    <img src="../img/facebook.png" alt="LOGO INMOBILIARIA" width="35px" height="35px">
+                    <img src="../img/instagram.png" alt="LOGO INMOBILIARIA" width="35px" height="35px">
+                    <img src="../img/whatsapp2.png" alt="LOGO INMOBILIARIA" width="35px" height="35px" style="filter: invert(100%);">                
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <script>
+        function changeImage(thumbnail) {
+            var mainImage = document.getElementById('main-image');
+            mainImage.style.opacity = '0';
+            setTimeout(function () {
+                mainImage.src = thumbnail.src;
+                mainImage.style.opacity = '1';
+            }, 300);
+        }
+        let quantity = 1;
+// Funciones para aumentar y disminuir la cantidad de productos
+function decreaseQuantity() {
+    if (quantity > 1) {
+        quantity--;
+        document.getElementById('quantity').innerText = quantity;
+    }
+}
+
+function increaseQuantity() {
+    quantity++;
+    document.getElementById('quantity').innerText = quantity;
+}
+
+// Función para calcular el total y redirigir a la página de factura
+function calcularTotal() {
+    var producto = "Sala Modular Sofa Cama Charlie";
+    var cantidad = quantity;
+    var precio = 99.99; // Precio del producto
+    var totalSinRedondear =cantidad * precio;
+    var total = totalSinRedondear.toFixed(2);
+    var imagenPrincipalSrc = "../img/sofablanco1.jpg"; // Ruta de la imagen principal
+    
+    // Envía la información a la página de facturación
+    sessionStorage.setItem("producto", producto);
+    sessionStorage.setItem("cantidad", cantidad);
+    sessionStorage.setItem("precio", precio);
+    sessionStorage.setItem("total", total);
+    sessionStorage.setItem("imagenPrincipalSrc", imagenPrincipalSrc); // Guarda la ruta de la imagen principal
+    
+    window.location.href = "pagoTotal.html";
+}
+
+        function mostrarInfo(id) {
+    // Ocultar todas las divisiones de información
+    document.getElementById('descripcion').style.display = 'none';
+    document.getElementById('valoraciones').style.display = 'none';
+    document.getElementById('garantias').style.display = 'none';
+
+    // Mostrar la división de información correspondiente al ID pasado como argumento
+    document.getElementById(id).style.display = 'block';
+  }
+  // Mostrar automáticamente la información de la primera opción (Valoraciones) al cargar la página
+    mostrarInfo('descripcion');
+    </script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/encabezados.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+  
+      body {
+        background: linear-gradient(to right, #e2c99f, #53576b);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: 'Raleway', sans-serif;
+      }
+ 
+      .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 500px;
+        padding: 20px;
+        margin-top: 130px;
+      }
+  
+      .form-register {
+        width: 100%;
+        background: #353437;
+        padding: 25px;
+        border-radius: 10px;
+        color: white;
+        box-shadow: 7px 13px 37px #000;
+      }
+  
+      .controls {
+        width: 100%;
+        background: #ffffff;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid #53576b;
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+      }
+  
+      .form-register p {
+        height: 40px;
+        text-align: center;
+        font-size: 13px;
+        line-height: 40px;
+      }
+  
+      .form-register h4 {
+        text-align: center;
+        margin: 15px 0;
+      }
+  
+      .form-register .botons {
+        width: 100%;
+        background: #a39b7e;
+        border: none;
+        padding: 12px;
+        color: white;
+        font-size: 16px;
+      }
+  
+      .logo img {
+        width: 200px;
+        height: auto;
+      }
+  
+      .elementosNav a, .menuDesplegable a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+      }
+  
+      .imagenContacto {
+        margin-bottom: -120px;
+      }
+      .footer {
+        background-color: #666565;
+        color: #fff;
+        padding: 20px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+      .footer col-lg-12{
+        margin-top: 50px;
+      }
+      .footer-icon {
+        margin-right: 10px;
+      } 
+      
+    </style>
+
+  
+  
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <section class="logo">
+            <a href="#">
+                <img src="../img/logoblanco.png" alt="LOGO INMOBILIARIA" style=" height: 100px;">
+            </a>
+        </section>
+        <nav class="elementosNav">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="principal.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contáctanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ofertas.html">Sobre nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </nav>
+</header>
+
+    
+    <section class="form-container">
+     
+      <form action="https://formsubmit.co/cristhophervillamarin7@gmail.com" method="POST" class="form-register">
+        <h4>Escríbenos Aquí</h4>
+  
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre:</label>
+          <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" required>
+          <span id="errorNombre" class="error"></span>
+        </div>
+  
+   
+        <div class="mb-3">
+            <label for="correo" class="form-label">Correo:</label>
+            <input class="controls" type="tel" name="correo" id="correo"  placeholder="Ingrese su correo" required>
+            <span id="errorCorreo" class="correo"></span>
+          </div>
+  
+        <div class="mb-3">
+          <label for="telefono" class="form-label">Teléfono:</label>
+          <input class="controls" type="tel" name="telefono" id="telefono" pattern="[0-9]{10}" placeholder="Ingrese su telefono" required>
+          <span id="errorTelefono" class="error"></span>
+        </div>
+  
+  
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje:</label>
+          <textarea class="controls" name="mensaje" id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          <span id="errorMensaje" class="error"></span>
+        </div>
+  
+        <input class="botons" type="submit" value="Enviar">
+        <p>Brindamos Confianza a Nuestros Clientes</p>
+      </form>
+    </section>
+  
+  
+<footer class="footer text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <i class="fab fa-bootstrap footer-icon"></i>
+     
+        &copy; 2024 Marros. Todos los derechos reservados al grupo 3.
+        <br>
+        <a href="tel:+1234567890">  <img src="/img/serviciocliente.png" alt=""  height="50px" style="margin-right: 20px;margin-top: 30px;"></a> 
+        <a href="">   <img src="/img/facebook.png" alt=""  height="50px" style="margin-right: 20px;margin-top: 30px;"></a> 
+        <a href=""> <img src="/img/instagram.png" alt="" height="50px" style="margin-right: 20px;margin-top: 30px;"></a> 
+        <a href=""> <img src="/img/whatsapp2.png" alt=""  height="50px" style="margin-right: 20px;margin-top: 30px;filter: invert(100%);"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</html>

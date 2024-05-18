@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+.producto {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 95px;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contenedorImagen {
+    margin-top: 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.product-details {
+    display: grid;
+    grid-template-columns: 100px 500px;
+    grid-template-rows: 70px 150px 50px 50px 75px;
+    grid-gap: 7px;
+
+   
+}
+.product-details .item {
+    border: 1px solid #ccc;
+    color:white;
+    background-color: #a39b7e;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+}
+
+.product-details .item:nth-child(odd) {
+    background-color: #53576b; /* Cambia este color al color café deseado */
+    color:white;
+   }
+
+
+
+.product-details .item h2 {
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+.product-details .item p {
+    text-align: center;
+
+}
+
+.product-image {
+    margin-top: 85px;
+    margin-right: 20px;
+border: 1px solid #a8a8a8;
+    
+}
+
+.product-image img {
+    width: 500px;
+}
+
+.thumbnails {
+   
+    justify-content: center;
+   
+    flex-direction: column;
+    align-items: center;
+}
+
+.thumbnails img {
+    width: 80px;
+    height: 80px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.thumbnails img:hover {
+    opacity: 0.7;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.product-image {
+    text-align: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.quantity-buttons {
+    
+display: flex;
+border: 1px solid #000000;
+width: 65px;
+justify-content: center; /* Centra los botones horizontalmente */
+align-items: center; /* Centra los botones verticalmente */
+}
+
+.quantity-buttons button {
+    align-items: center;
+    padding: 5px 9px;
+    margin: 0 5px;
+    background-color: #353437;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-buttons button:hover {
+    background-color: #ff8c00;
+}
+
+
+    .add-to-cart {
+    
+        padding: 30px 70px;
+        background-color: #e2ac3f;
+        border: none;
+        color: black;
+        font-size: 14px;
+        font-family: 'Raleway', sans-serif;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-weight: 900;
+    }
+
+    .add-to-cart:hover {
+        background-color: #ff8c00;
+    }
+
+    .carrito{
+        margin-left: 950px;
+        margin-bottom: 60px; margin-top: -60px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .submenu1{
+        margin-left: 30px;
+        width: 90%;
+        border: 1px solid #000000;
+        margin-bottom: 30px;
+        background-color: #a8a8a8;
+        
+    }
+
+    .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  
+
+    }
+
+    .menu-item {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #353437;
+    color: white;
+    
+    }
+
+    .menu-item:hover {
+    background-color: #a39b7e;
+    color: white;
+    }
+
+    /* Estilos para la información */
+    #valoraciones,
+    #descripcion,
+    #garantias {
+    display: none;
+    margin-top: 20px;
+    background-color: #a8a8a8;
+    margin-bottom: 50px;
+    }
+
+    /* Estilos generales para la información */
+    #valoraciones p,
+    #descripcion p,
+    #garantias p {
+    margin: 0;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    }
+
+    .metodosPago {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 30px;
+    }
+
+.parteEntera {
+    display: flex;
+   
+}
+
+    .parteIzquierda {          
+    
+        color: #353437;
+        width: 60%;
+        font-family: 'Raleway', sans-serif;
+    
+    }
+
+    .parteDerecha {
+
+        width: 40%; 
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    
+    }
+
+    .parteDerecha aside {
+        border: 1px solid #a8a8a8;
+        padding: 90px 10px;
+    
+    }

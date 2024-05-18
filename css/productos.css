@@ -1,0 +1,60 @@
+.productos {
+    margin-top: 85px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #A3BFAF;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    padding: 30px;
+    border-top: 3px solid white;
+}
+
+.imgProducto {
+    text-align: center;
+    background-color: #A3BFAF;
+    padding: 30px;
+}
+
+.productos-container {
+    display: inline-block;
+    margin:  10px;
+    text-align: center;
+    background-color: #83A09B;
+}
+
+.productos-container img {
+    height: 220px;
+    width: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.productos-container p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    margin: 0;
+
+}
+
+.productos-container b {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+.productos-container a {
+    padding: 15px;
+    background-color: #c5b375; /* Color de fondo del botón */
+    color: #000; /* Color del texto del botón */
+    text-decoration: none;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px; /* Tamaño del texto */
+    transition: transform 0.3s ease; /* Agregar una transición suave */
+    display: inline-block;
+}
+
+.productos-container a:hover {
+    transform: scale(1.3); /* Aumentar el tamaño del botón al 110% en hover */
+}

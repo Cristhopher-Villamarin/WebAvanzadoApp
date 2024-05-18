@@ -1,0 +1,92 @@
+/* Estilos del Header */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color:#353437;
+    font-family: 'Raleway', sans-serif;
+    height: 85px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000; 
+}
+
+.logo {
+    margin-left: 15px;
+}
+
+.elementosNav {
+    margin-left: auto;
+}
+
+.elementosNav a {
+    padding: 20px 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 19px;
+    transition: 1s;
+}
+
+.elementosNav a:hover {
+    background-color: #a39b7e;
+    transition: 1s ease-in;
+}
+
+/* Estilos del menú desplegable */
+.menuDesplegable {            
+    position: relative;
+    display: inline-block;
+}
+
+.contenedorMenu {
+    margin-top: 20px;
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menuDesplegable:hover .contenedorMenu {
+    display: block;
+}
+
+        .contenedorMenu a {
+            margin-top: 10px;
+            padding: 8px; /* Ajusta el espaciado interno de las opciones del menú */
+            display: block;
+        }
+/* Estilos del Footer */
+.piePagina {
+    background-color: #53576b;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    bottom: 0;
+}
+
+.piePagina p {
+    margin: 0;
+}
+
+.piePagina img {
+    margin-left: 10px;
+}
+
+.serviciocliente {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Añade otros estilos según sea necesario */

@@ -1,0 +1,49 @@
+.carruselfijo{
+
+    margin-top: 100px;
+}
+
+#slider-container {
+left: 0;
+width: 100%;
+height: auto;
+overflow: hidden;
+align-items: center;
+text-align: center;
+margin-top: 60px;
+
+}
+
+#slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: auto;
+    z-index: 100; 
+}
+
+.slide {
+    width: 100%;
+    
+
+    flex-shrink: 0;
+}
+
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
